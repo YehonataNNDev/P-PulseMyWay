@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html, #root {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: fixed;
+}
+body {
+  font-family: Heebo;
+  margin: 0;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: fixed;
+}
+
+
+:root {
+  --primaryColor: #D5EAEB;
+  --secondaryColor: #B4CDD8;
+  --textColor: #2B2C2A;
+
+}
+
+.WebContainer {
+  width: 100vw;
+  height: 100%;
+}
+
+.PageNavbar {
+  height: 7%;
+  width: 100%;
+  background-color: var(--primaryColor);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1.5vw;
+}
+
+.PageNavbar > a {
+  margin: 0;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.8vw;
+  color: var(--textColor);
+  transition: 0.2s all;
+  padding: 0.5vw;
+  border-radius: 2vw;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.PageNavbar > a:hover {
+  transition: 0.2s all;
+
+  background-color: var(--secondaryColor);
+}
+
+.PageNavbar > a:last-child {
+  position: absolute;
+  left: 0;
+  margin-left: 4vw;
+  color: red;
+}
+.USER {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.WorkersTable {
+  margin-top: 2vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5vh;
+
+}
+
+.WorkersTable > table {
+  height: 100%;
+  overflow: auto;
+}
+
+.UserDetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  gap: 0vh;
+  margin-top: 1vh;
+  
+  width: 100%;
+}
+
+.UserDetails > h1 {
+  font-size: 1.2vw;
+}
+
+.DetailsPart {
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.1);
+  user-select: none;
+  width: 74%;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  /* height: 18vh; */
+  background-color: var(--primaryColor);
+  border-radius: 0.5vw;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.7vh;
+}
+
+.DetailsPart > p {
+  margin: 0;
+  font-size: 0.8vw;
+}
+
+.Graph {
+  width: 76%;
+  height: 26vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;  
+}
+
+.UserName {
+  text-align: center;
+  margin-top: 3.5vh;
+  font-size: 2vw;
+}
+
+.GraphElement {
+  width: 100%;
+  /* background-color: var(--primaryColor); */
+  border-radius: 0.5vw;
+  padding: 2.0vw;
+  height: 100%;
+}
+
+.Modal {
+  display: block;
+  position: absolute;
+}
+
+.myWorkersH1 {
+  font-size: 1.5vw;
+}
+
+.DialogInputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.34vh;
+}
+
+.InsideDialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 20vw;
+  padding-bottom: 5vh;
+}
+
+
+hr {
+  border: 0;
+  width: 46%;               
+  background-color:var(--textColor);
+  height: 1px;
+}
+
+.Graph > h1 {
+  margin: 0;
+  font-size: 1.2vw;
+}
+
+.LoginPage {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 0;
+}
+
+.LoginLogo > img {
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto; */
+  /* margin-top: 2vh; */
+  height: 5vw;
+  width: auto;
+}
+
+.LoginInputs {
+  gap: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.LoginText  > h1{
+  font-size: 1.5vw;
+  margin: 0;
+  color: var(--textColor);
+}
+
+.LoginCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+  width: 25%;
+  background-color: var(--primaryColor);
+  padding: 2vw;
+  padding-bottom: 3vw;
+  border-radius: 2.5vw;
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.1);
+}
+
+.css-j204z7-MuiFormControlLabel-root {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.SelectedDateInputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .PageNavbar {
+    gap: 4.5vw;
+  }
+  .PageNavbar > a {
+    font-weight: 700;
+    font-size: 3.4vw;
+    padding: 2vw;
+  }
+
+  .UserDetails > h1 {
+    font-size: 3.5vw;
+  }
+
+  .DetailsPart > p {
+    font-size: 3.5vw;
+  }
+
+  .myWorkersH1 {
+    font-size: 4.8vw;
+  }
+
+  .UserName {
+    font-size: 6.5vw;
+  }
+  .Graph > h1 {
+    font-size: 3.5vw;
+  }
+
+  .Graph {
+    width: 84%;
+  }
+  .InsideDialog {
+    width: 70vw;
+  }
+  .DetailsPart {
+    border-radius: 2.5vw;
+  }
+
+  
+  .LoginPage {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .LoginLogo > img {
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto; */
+    /* margin-top: 2vh; */
+    height: 27vw;
+    width: auto;
+  }
+
+  .LoginInputs {
+    gap: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .LoginText  > h1{
+    font-size: 6vw;
+    margin: 0;
+    color: var(--textColor);
+  }
+
+  .LoginCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    width: 80%;
+    background-color: var(--primaryColor);
+    padding: 5vw;
+    padding-bottom: 10vw;
+    border-radius: 2.5vw;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.1);
+  }
+
+  .SelectedDateInputs {
+    gap: 2.7vw
+  }
+
+}
+
